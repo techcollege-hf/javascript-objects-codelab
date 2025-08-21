@@ -22,20 +22,13 @@
 <body>
     <header>
         <section class="assignmentTopSection">
-            <h1>Easy assignments</h1>
+            <h1>Nemme opgaver</h1>
             <nav>
                 <a href="../../index.html">back</a>
             </nav>
             <br>
-            <p>easy.</p>
-            <br>
 
-            description
-
-
-            <strong>
-
-                <p>CSS skal skrives i filen: /opgavefiler/js/easy.css </p>
+                <p>opgaver skal skrives i filen: opgavefiler\js\easy.js </p>
             </strong>
 
 
@@ -45,23 +38,17 @@
         <header class="easy"></header>
         <article>
             <h2>Opgave 1</h2>
-            <p>
+            Øve oprettelse af et simpelt objekt.
+            <h3>Instruktioner</h3>Opret et objekt person med følgende egenskaber:
 
-            </p>
-            <h3>Instruktioner</h3>
-            <ol>
-                <li>
-                    do this
-                </li>
-                <li>
-                    do this
-                </li>
-                <li>
-                    do this
-                </li>
-            </ol>
+<ul>
+<li>name: en streng med et navn</li>
+<li>age: et tal</li>
+<li>job: en streng med jobtitel</li>
+</ul>
+log dit resultat i konsollen.
 
-
+<br>
 
 
 
@@ -70,17 +57,95 @@
             <div class="hint">
 
                 <pre><code>
-                    .pop:hover{
-                        animation-name: popUp;
-                        animation-duration: 500ms;
-                        animation-fill-mode:both;
-                        animation-timing-function: ease;
-                      }
-                      
-                      @keyframes popUp {
-                        from {transform: scale(100%)}
-                        to {transform: scale(120%)}
-                      }
+                    
+                const person = {
+                name: "Bo",
+                age: 42,
+                job: "Faglærer"
+                };
+
+                console.log(person);
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+     <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 2</h2>
+            <p>Øve læsning af værdier fra et objekt.</p>
+            <h3>Instruktioner</h3>
+            
+
+Opgave: Skriv kode der bruger dit objekt fra opgave 1 og udskriver følgende:
+
+<ul>
+<li>Navnet på personen</li>
+<li>Jobtitlen</li>
+<li>En sætning som f.eks. "Bo arbejder som Faglærer"</li>
+</ul>
+
+
+log dit resultat i konsollen.
+
+<br>
+
+
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                    
+                
+                console.log(person.name);       // "Bo"
+                console.log(person.job);        // "Faglærer"
+                console.log(`${person.name} arbejder som ${person.job}`);
+
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+     <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 3</h2>
+            <p> Øve brug af delete til at fjerne en key-value pair..</p>
+            <h3>Instruktioner</h3>
+           
+
+Slet age fra objektet og log dit resultat i konsollen.
+            
+
+<br>
+
+
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                    
+                
+delete person.age;
+
+console.log(person);
+
+
+
+
     </code></pre>
             </div>
         </article>
